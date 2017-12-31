@@ -15,7 +15,7 @@ LED Device Driver for Raspberry Pi3
 - Resistor 10[Ω]
 
 # Picture
-![circuit](https://github.com/taishi107/robosys_device_driver/blob/master/DSC_0942.jpg)
+![circuit](https://github.com/taishi107/robosys_device_driver/blob/master/DSC_0942.JPG)
 
 # Installation
 - download repository
