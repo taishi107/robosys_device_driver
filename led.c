@@ -153,9 +153,6 @@ static int __init init_mod(void)
 	
 }
 
-
-
-
 static void __exit cleanup_mod(void)
 {
 	cdev_del(&cdv);
@@ -163,7 +160,6 @@ static void __exit cleanup_mod(void)
 	class_destroy(cls);
 	unregister_chrdev_region(dev, 1);
 	printk(KERN_INFO "%s is unloaded. major:%d\n", __FILE__,MAJOR(dev));		
-    
     del_timer(&timer);
     del_timer(&timer2);
 }
@@ -171,10 +167,3 @@ static void __exit cleanup_mod(void)
 
 module_init(init_mod);
 module_exit(cleanup_mod);
-
-
-
-
-
-
-
