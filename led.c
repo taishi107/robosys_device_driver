@@ -62,6 +62,9 @@ static ssize_t led_timer(struct file* flip, const char* buf, size_t count, loff_
     else if(str>='a' && str<='z'){
         mode = str;
     }
+    flag = 1;
+    iter = 0;
+
     return 1;
 }
 static void light_off(unsigned long arg){
@@ -90,8 +93,6 @@ static void led_write(unsigned long arg)
             break;
         case 'k':
             gpio_base[10] = 1 << 25;
-            flag = 1;
-            iter = 0;
             break;
     }
     return 1;
